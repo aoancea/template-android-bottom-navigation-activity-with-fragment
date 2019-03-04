@@ -9,4 +9,5 @@
     <string name="fragment_dashboard_text">Dashboard page fragment</string>
     <string name="fragment_notifications_text">Notifications page fragment</string>
     <string name="fragment_notifications2_text">Notifications2 page fragment</string>
+    <string name="fragment_notifications3_text">Notifications3 page fragment</string>
 </resources>

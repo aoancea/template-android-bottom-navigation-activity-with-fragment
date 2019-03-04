@@ -36,6 +36,10 @@ class MainActivity : AppCompatActivity() {
                 replaceFragment(Notifications2Fragment())
                 return@OnNavigationItemSelectedListener true
             }
+            R.id.navigation_notifications3 -> {
+                replaceFragment(Notifications3Fragment())
+                return@OnNavigationItemSelectedListener true
+            }
         }
         false
     }
