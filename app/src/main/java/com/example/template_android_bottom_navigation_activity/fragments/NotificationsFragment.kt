@@ -8,9 +8,9 @@ import android.view.ViewGroup
 
 import com.example.template_android_bottom_navigation_activity.R
 
-class Fragment03 : Fragment() {
+class NotificationsFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_03, container, false)
+        return inflater.inflate(R.layout.fragment_notifications, container, false)
     }
 }

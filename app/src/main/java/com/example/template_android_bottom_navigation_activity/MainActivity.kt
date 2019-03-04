@@ -9,33 +9,35 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
-        when (item.itemId) {
-            R.id.navigation_home -> {
-                replaceFragment(Fragment01())
-                return@OnNavigationItemSelectedListener true
-            }
-            R.id.navigation_dashboard -> {
-                replaceFragment(Fragment02())
-                return@OnNavigationItemSelectedListener true
-            }
-            R.id.navigation_notifications -> {
-                replaceFragment(Fragment03())
-                return@OnNavigationItemSelectedListener true
-            }
-            R.id.navigation_notifications2 -> {
-                replaceFragment(Fragment04())
-                return@OnNavigationItemSelectedListener true
-            }
-        }
-        false
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        replaceFragment(HomeFragment())
+
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
+    }
+
+    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+        when (item.itemId) {
+            R.id.navigation_home -> {
+                replaceFragment(HomeFragment())
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_dashboard -> {
+                replaceFragment(DashboardFragment())
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_notifications -> {
+                replaceFragment(NotificationsFragment())
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_notifications2 -> {
+                replaceFragment(Notifications2Fragment())
+                return@OnNavigationItemSelectedListener true
+            }
+        }
+        false
     }
 
     private fun replaceFragment(fragment: Fragment) {

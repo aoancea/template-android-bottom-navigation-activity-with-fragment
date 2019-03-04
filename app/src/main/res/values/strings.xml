@@ -5,8 +5,8 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_notifications2">Notifications 2</string>
 
-    <string name="fragment_01_text">Fragment one</string>
-    <string name="fragment_02_text">Fragment two</string>
-    <string name="fragment_03_text">Fragment three</string>
-    <string name="fragment_04_text">Fragment four</string>
+    <string name="fragment_home_text">Home page fragment</string>
+    <string name="fragment_dashboard_text">Dashboard page fragment</string>
+    <string name="fragment_notifications_text">Notifications page fragment</string>
+    <string name="fragment_notifications2_text">Notifications2 page fragment</string>
 </resources>
